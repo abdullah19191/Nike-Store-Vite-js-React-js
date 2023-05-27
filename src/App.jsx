@@ -1,11 +1,11 @@
 import React from 'react'
 import { Hero } from './components'
-
+import {heroapi} from '../src/Data/data.js'
 const App = () => {
   return (
     <>
     <main>
-      <Hero/>
+      <Hero  heroapi={heroapi}/>
     </main>
     </>
   )
