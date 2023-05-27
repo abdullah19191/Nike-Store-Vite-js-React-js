@@ -1,8 +1,13 @@
 import React from 'react'
+import { Hero } from './components'
 
 const App = () => {
   return (
-    <div className=' text-cyan-200'>Nike App Ho sala</div>
+    <>
+    <main>
+      <Hero/>
+    </main>
+    </>
   )
 }
 
