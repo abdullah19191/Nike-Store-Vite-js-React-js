@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import '../index.css'
+import Clips from './utils/Clips'
  const Hero = ({heroapi : {title,subtitle,btntext,img,sociallinks,videos}}) => {
   return (
     <div className=' relative h-auto w-auto flex flex-col '>
@@ -13,7 +14,9 @@ import '../index.css'
                     {btntext}
                 </button>
                 <div className=''>
-                    {videos}
+                    {videos?.map((val,i)=>(
+                        <Clips key={i} imgsrc={val.imgsrc} clip={val.clip} />
+                    ))}
                 </div>
                 <div className=''></div>
             </div>
