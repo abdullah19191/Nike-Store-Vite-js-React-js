@@ -19,7 +19,7 @@ import Sociallinks from './utils/Sociallinks'
                         <Clips key={i} imgsrc={val.imgsrc} clip={val.clip} />
                     ))}
                 </div>
-                <div className=''>
+                <div className='grid items-center gap-3 absolute right-0 top-[33vh] lg:top-[27vh]'>
                     {sociallinks?.map((val,i)=>(
                         <Sociallinks key={i} icon={val.icon}/>
                     ))}
