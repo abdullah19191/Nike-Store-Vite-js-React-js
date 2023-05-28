@@ -12,12 +12,14 @@ import '../index.css'
                 <button className='button-theme font-medium bg-slate-200 shadow-slate-200 rounded-xl my-5'>
                     {btntext}
                 </button>
-                <div className=''></div>
+                <div className=''>
+                    {videos}
+                </div>
                 <div className=''></div>
             </div>
             <div className="">
                 <img 
-                className=' -rotate-[25deg] hover:rotate-0 w-auto h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh] transitions-theme' 
+                className=' -rotate-[25deg] hover:rotate-0 w-auto h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh] transitions-theme object-fill cursor-pointer' 
                 src={img} alt="" />
             </div>
 
