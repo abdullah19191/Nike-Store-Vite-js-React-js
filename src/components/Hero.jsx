@@ -2,6 +2,7 @@
 import React from 'react'
 import '../index.css'
 import Clips from './utils/Clips'
+import Sociallinks from './utils/Sociallinks'
  const Hero = ({heroapi : {title,subtitle,btntext,img,sociallinks,videos}}) => {
   return (
     <div className=' relative h-auto w-auto flex flex-col '>
@@ -18,11 +19,16 @@ import Clips from './utils/Clips'
                         <Clips key={i} imgsrc={val.imgsrc} clip={val.clip} />
                     ))}
                 </div>
-                <div className=''></div>
+                <div className=''>
+                    {sociallinks?.map((val,i)=>(
+                        <Sociallinks key={i} icon={val.icon}/>
+                    ))}
+                </div>
             </div>
             <div className="">
                 <img 
-                className=' -rotate-[25deg] hover:rotate-0 w-auto h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh] transitions-theme object-fill cursor-pointer' 
+                className=' -rotate-[25deg] hover:rotate-0 w-auto h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh] 
+                transitions-theme object-fill cursor-pointer' 
                 src={img} alt="" />
             </div>
 
