@@ -1,8 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 
-const Title = () => {
+const Title = ({title}) => {
   return (
-    <div>Title</div>
+    <div>
+        <h1>{title}</h1>
+    </div>
   )
 }
 

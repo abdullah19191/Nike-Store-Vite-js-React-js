@@ -1,14 +1,19 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import Title from './utils/Title'
 import Item from './utils/Item'
 
-const Sales = () => {
+const Sales = ({endpoint:{title , items}}) => {
+    
   return (
     <>
      <div className="">
-        <Title/>
+        <Title title={title}/>
         <div className="">
-            <Item/>
+            {items.map((item,i)=>(
+                <Item {...item} key={i}/>
+            ))}
         </div>
      </div>
     </>
