@@ -1,11 +1,12 @@
 import React from 'react'
-import { Hero } from './components'
+import { Hero , Sales } from './components'
 import {heroapi} from '../src/Data/data.js'
 const App = () => {
   return (
     <>
     <main>
       <Hero  heroapi={heroapi}/>
+      <Sales/>
     </main>
     </>
   )
