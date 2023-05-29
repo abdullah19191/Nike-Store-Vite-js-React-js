@@ -7,6 +7,7 @@ const App = () => {
     <main>
       <Hero  heroapi={heroapi}/>
       <Sales/>
+      <Sales/>
     </main>
     </>
   )

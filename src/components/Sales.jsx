@@ -1,10 +1,17 @@
 import React from 'react'
+import Title from './utils/Title'
+import Item from './utils/Item'
 
 const Sales = () => {
   return (
-    <div>
-        
-    </div>
+    <>
+     <div className="">
+        <Title/>
+        <div className="">
+            <Item/>
+        </div>
+     </div>
+    </>
   )
 }
 
